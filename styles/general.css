@@ -1,0 +1,16 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(18, 24, 40);
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Roboto, Arial;
+}
+
+html {
+  scroll-behavior: smooth;
+}

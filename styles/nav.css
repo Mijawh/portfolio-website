@@ -1,0 +1,92 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+
+  margin-left: 40%;
+  margin-right: 25%;
+  margin-top: 40px;
+
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav div {
+  transition: color 0.5s;
+}
+
+/* Create underline that slowly expands */
+.nav-home,
+.nav-about,
+.nav-projects,
+.nav-skills,
+.nav-contact {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-home::after,
+.nav-about::after,
+.nav-projects::after,
+.nav-skills::after,
+.nav-contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-home:hover::after,
+.nav-about:hover::after,
+.nav-projects:hover::after,
+.nav-skills:hover::after,
+.nav-contact:hover::after {
+  width: 100%;
+}
+
+.nav-home:hover,
+.nav-about:hover,
+.nav-projects:hover,
+.nav-skills:hover,
+.nav-contact:hover{
+  color: rgb(255, 127, 80);
+  cursor: pointer;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .nav div {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .nav-home::after,
+  .nav-about::after,
+  .nav-projects::after,
+  .nav-skills::after,
+  .nav-contact::after {
+    width: 0;
+  }
+
+  .nav-home:hover,
+  .nav-about:hover,
+  .nav-projects:hover,
+  .nav-skills:hover,
+  .nav-contact:hover {
+    color: rgb(255, 127, 80);
+  }
+}
