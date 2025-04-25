@@ -52,6 +52,7 @@
 .project-item-image {
   height: 200px;
   width: 330px;
+  object-fit: cover;
   border-radius: 18px 18px 0px 0px;
 }
 
