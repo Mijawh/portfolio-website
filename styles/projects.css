@@ -25,8 +25,8 @@
 
 .project-item {
   background-color: rgb(25, 33, 56);
-  height: 600px;
-  width: 330px;
+  height: 700px;
+  width: 400px;
   margin: 30px 20px 30px 20px;
   border: 3px solid rgb(49, 61, 97);
   border-radius: 18px;
@@ -50,10 +50,11 @@
 }
 
 .project-item-image {
-  height: 200px;
-  width: 330px;
+  height: 300px;
+  width: 400px;
   object-fit: cover;
   border-radius: 18px 18px 0px 0px;
+  object-position: top;
 }
 
 .project-item-text-container {
